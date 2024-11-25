@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 
 const ProductPage = () => {
-    debugger
+
     const summary = useSelector((state) => state.products);
 
     const containerStyle = {
