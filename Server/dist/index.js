@@ -1,7 +1,7 @@
 "use strict";
 
 var app = require("./app");
-var PORT = 5000;
+var PORT = process.env.PORT || 5000;
 app.listen(PORT, function () {
   return console.log("Server running on port ".concat(PORT));
 });
