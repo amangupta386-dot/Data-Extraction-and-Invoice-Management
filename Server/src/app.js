@@ -3,7 +3,7 @@ const cors = require("cors");
 const multer = require("multer");
 require("dotenv").config();
 
-const fileController = require("./src/controllers/fileController");
+const fileController = require("./controllers/fileController");
 
 const app = express();
 const upload = multer({ dest: "uploads/" });
