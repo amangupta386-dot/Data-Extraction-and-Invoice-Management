@@ -13,8 +13,4 @@ app.use(cors());
 
 // File upload route
 app.post("/upload", upload.single("file"), fileController.uploadFile);
-app.get("/", (req, res) => {
-  res.send("Welcome to the File Upload API!");
-});
-
 module.exports = app;
