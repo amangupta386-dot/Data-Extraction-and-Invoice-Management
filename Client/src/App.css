@@ -1,0 +1,8 @@
+.nav-link {
+  background: none;
+}
+
+.nav-link:hover {
+  background: #555; /* Change background color on hover */
+  color: #fff;      /* Ensure text remains white */
+}
