@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 const CustomerPage = () => {
 
-    const summary = useSelector((state) => state.customers || state.customers.items);
+    const summary = useSelector((state) => state.customers || state?.customers?.items);
 
     if (!summary || Object.keys(summary).length === 0) {
         return <p style={{ color: "#555", fontStyle: "italic" }}>No data available.</p>;
